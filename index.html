@@ -1,0 +1,294 @@
+<HTML>
+<HEAD>
+	<STYLE type="text/css">
+body{
+	overflow-x:hidden;
+}
+#logo{
+	height:60px;
+	padding-top: 5px;
+	padding-left: 15px;
+	position: absolute;
+
+}
+#square{
+	width:1266px;
+	height:70px;
+	background:#000000;
+	position: absolute;
+	z-index: -1;	
+}
+#Home{
+	padding-left: 100px;
+	padding-bottom: 100px;
+	padding-top: 1px;
+	color: white;
+	position: absolute;
+}
+#KSP{
+	padding-left: 200px;
+	padding-bottom: 100px;
+	padding-top: 1px;
+	color: white;
+	position: absolute;
+}
+#XPlane11{
+	padding-left: 300px;
+	padding-bottom: 100px;
+	padding-top: 1px;
+	color: white;
+	position: absolute;
+}
+#Cityskyline{
+	padding-left: 460px;
+	padding-bottom: 100px;
+	padding-top: 1px;
+	color: white;
+	position: absolute;
+}
+#PolyBridge{
+	padding-left: 640px;
+	padding-bottom: 100px;
+	padding-top: 1px;
+	color: white;
+	position: absolute;
+}
+#UniverseSandbox²{
+	padding-left: 810px;
+	padding-bottom: 100px;
+	padding-top: 1px;
+	color: white;
+	position: absolute;
+}
+#Minecraft{
+	padding-left: 1050px;
+	padding-bottom: 100px;
+	padding-top: 1px;
+	color: white;
+	position: absolute;
+}
+#Kerbal-image{
+	position:absolute;
+	padding-left:39px;
+	padding-right:0px;
+	padding-top:100px;
+	opacity:1;
+	left: 0px;
+	-webkit-transition:  left 2s ease, opacity 2s ease;
+	-moz-transition: left 2s ease, opacity 2s ease;
+	-o-transition: left 2s ease, opacity 2s ease;
+	transition: left 2s ease, opacity 2s ease;
+}
+#triangle-left{
+	width: 0;
+	height: 0;
+	border-top: 90px solid transparent;
+	border-right: 50px solid red;
+	border-bottom: 90px solid transparent;
+	position: absolute;
+	top:400px;
+	left:50px;
+	z-index: 100;
+}
+#triangle-right{
+	width: 0;
+	height: 0;
+	border-top: 90px solid transparent;
+	border-left: 50px solid red;
+	border-bottom: 90px solid transparent;
+	position: absolute;
+	top:400px;
+	left:1180px;
+	z-index: 100;
+}
+#Xplane-image{
+	position:absolute;
+	padding-left:1500px;
+	padding-right:0px;
+	padding-top:100px;
+	opacity:0;
+	left: 0px;
+	-webkit-transition:  left 2s ease, opacity 2s ease;
+	-moz-transition: left 2s ease, opacity 2s ease;
+	-o-transition: left 2s ease, opacity 2s ease;
+	transition: left 2s ease, opacity 2s ease;
+}
+#Euro-image{
+	position:absolute;
+	padding-left:1500px;
+	padding-right:0px;
+	padding-top:100px;
+	opacity:0;
+	left: 0px;
+	-webkit-transition:  left 2s ease, opacity 2s ease;
+	-moz-transition: left 2s ease, opacity 2s ease;
+	-o-transition: left 2s ease, opacity 2s ease;
+	transition: left 2s ease, opacity 2s ease;
+}
+#Minecraft-image{
+	position:absolute;
+	padding-left:1500px;
+	padding-right:0px;
+	padding-top:100px;
+	opacity:0;
+	left: 0px;
+	-webkit-transition:  left 2s ease, opacity 2s ease;
+	-moz-transition: left 2s ease, opacity 2s ease;
+	-o-transition: left 2s ease, opacity 2s ease;
+	transition: left 2s ease, opacity 2s ease;
+}
+#City-image{
+	position:absolute;
+	padding-left:1500px;
+	padding-right:0px;
+	padding-top:100px;
+	opacity:0;
+	left: 0px;
+	-webkit-transition:  left 2s ease, opacity 2s ease;
+	-moz-transition: left 2s ease, opacity 2s ease;
+	-o-transition: left 2s ease, opacity 2s ease;
+	transition: left 2s ease, opacity 2s ease;
+}
+#Bridge-image{
+	position:absolute;
+	padding-left:1500px;
+	padding-right:0px;
+	padding-top:100px;
+	opacity:0;
+	left: 0px;
+	-webkit-transition:  left 2s ease, opacity 2s ease;
+	-moz-transition: left 2s ease, opacity 2s ease;
+	-o-transition: left 2s ease, opacity 2s ease;
+	transition: left 2s ease, opacity 2s ease;
+}
+#Sandbox-image{
+	position:absolute;
+	padding-left:1500px;
+	padding-right:0px;
+	padding-top:100px;
+	opacity:0;
+	left: 0px;
+	-webkit-transition:  left 2s ease, opacity 2s ease;
+	-moz-transition: left 2s ease, opacity 2s ease;
+	-o-transition: left 2s ease, opacity 2s ease;
+	transition: left 2s ease, opacity 2s ease;
+}
+#square-1{
+	width:400px;
+	height:50px;
+	background:#000000;
+	position: absolute;
+	z-index: -1;
+	top:850;
+	left:415;
+
+}
+#edu-text{
+	position: absolute;
+	color: white;
+	padding-top: 830;
+	padding-left: 480;
+}
+#Learn-image{
+	position:absolute;
+	height:150px;
+	padding-top:950px;
+	padding-left: 50px;
+}
+#text-1{
+	position:absolute;
+	color: white;
+	font: Helvetica Regular;
+
+}
+
+</STYLE>
+	<TITLE>Educational Games</TITLE>
+</HEAD>
+<BODY bgcolor=#1c344c>
+<SCRIPT src="jquery.js"></SCRIPT>
+<SCRIPT>
+	var selected=0;
+	$(function(){
+		$("#triangle-right").click(function(){
+			selected=(selected+1)%7;
+			alert(selected);
+		})
+	})
+	$(function(){
+		$("#triangle-left").click(function(){
+			selected=selected-1;
+			if(selected<0){
+				selected=5;
+			}
+			if(selected==5){
+				document.getElementById('Kerbal-image').style.opacity='0';
+				document.getElementById('Kerbal-image').style.left='-1500';
+				document.getElementById('Xplane-image').style.left='-1460';
+				document.getElementById('Xplane-image').style.opacity='1';
+				document.getElementById('Minecraft-image').style.left='1461'
+			}
+			else if(selected==4){
+				document.('Xplane-image').style.opacity='0';
+				document.getElegetElementByIdmentById('Xplane-image').style.left='-1500';
+				document.getElementById('City-image').style.left='-1460';
+				document.getElementById('City-image').style.opacity='1';
+				document.getElementById('Kerbal-image').style.left='1461'
+			}
+			else if(selected==3){
+				document.getElementById('City-image').style.opacity='0';
+				document.getElementById('City-image').style.left='-1500';
+				document.getElementById('Bridge-image').style.left='-1460';
+				document.getElementById('Bridge-image').style.opacity='1';
+				document.getElementById('Xplane-image').style.left='1461'
+			}
+			else if(selected==2){
+				document.getElementById('Bridge-image').style.opacity='0';
+				document.getElementById('Bridge-image').style.left='-1500';
+				document.getElementById('Sandbox-image').style.left='-1460';
+				document.getElementById('Sandbox-image').style.opacity='1';
+				document.getElementById('City-image').style.left='1461'
+
+			}
+			else if(selected==1){
+				document.getElementById('Sandbox-image').style.opacity='0';
+				document.getElementById('Sandbox-image').style.left='-1500';
+				document.getElementById('Minecraft-image').style.left='-1460';
+				document.getElementById('Minecraft-image').style.opacity='1';
+				document.getElementById('Bridge-image').style.left='1461'
+			}
+			else if(selected==0){
+				document.getElementById('Minecraft-image').style.opacity='0';
+				document.getElementById('Minecraft-image').style.left='-1500';
+				document.getElementById('Kerbal-image').style.left='-1460';
+				document.getElementById('Kerbal-image').style.opacity='1';
+				document.getElementById('Sandbox-image').style.left='1461'
+			}
+			
+		})
+	})
+</SCRIPT>
+<DIV id='square'></DIV>
+<IMG id="Logo" src="controller-1784573_960_720.png"></IMG>
+<H2 id="Home">Home</H2>
+<H2 id="KSP">KSP</H2>
+<H2 id="XPlane11">X Plane 11</H2>
+<H2 id="Cityskyline">City skyline</H2>
+<H2 id="PolyBridge">Poly Bridge</H2>
+<H2 id="UniverseSandbox²">Universe Sandbox ²</H2>
+<H2 id="Minecraft">Minecraft</H2>
+<IMG id="Kerbal-image" src="kerbal_space_program.png"></IMG>
+<DIV id='triangle-left'></DIV>
+<DIV id='triangle-right'></DIV>
+<IMG id="Xplane-image" src="X-Plane-11.png"></IMG>
+<IMG id="Euro-image" src="Euro.png"></IMG>
+<IMG id="Minecraft-image" src="DFkpiyZXUAISSrg.jpg"></IMG>
+<IMG id="City-image" src="cities-skylines_0.jpg"></IMG>
+<IMG id="Bridge-image" src="DIfk5E6WsAIna6Y.jpg"></IMG>
+<IMG id="Sandbox-image" src="DIg-DYjVYAAIWOB.png"></IMG>
+<DIV id="square-1"></DIV>
+<H1 id="edu-text">Educational Games</H1>
+<IMG id="Learn-image" src="Education-Games-101.jpg"></IMG>
+<H3 id="text-1">HIHI</H3>
+</BODY>
+</HTML>
