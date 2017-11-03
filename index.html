@@ -101,6 +101,9 @@ body{
 	left:1180px;
 	z-index: 100;
 }
+#triangle-right:hover{
+		border-left: 50px solid red;
+	}
 #Xplane-image{
 	position:absolute;
 	padding-left:1500px;
@@ -195,12 +198,16 @@ body{
 	padding-top:950px;
 	padding-left: 50px;
 }
-#text-1{
-	position:absolute;
-	color: white;
-	font: Helvetica Regular;
-
+#square-2{
+	width:500px;
+	height:500px;
+	background:#2c445c;
+	position: absolute;
+	z-index: -1;
+	top:955;
+	left:250;
 }
+
 
 </STYLE>
 	<TITLE>Educational Games</TITLE>
@@ -209,12 +216,7 @@ body{
 <SCRIPT src="jquery.js"></SCRIPT>
 <SCRIPT>
 	var selected=0;
-	$(function(){
-		$("#triangle-right").click(function(){
-			selected=(selected+1)%7;
-			alert(selected);
-		})
-	})
+
 	$(function(){
 		$("#triangle-left").click(function(){
 			selected=selected-1;
@@ -229,8 +231,8 @@ body{
 				document.getElementById('Minecraft-image').style.left='1461'
 			}
 			else if(selected==4){
-				document.('Xplane-image').style.opacity='0';
-				document.getElegetElementByIdmentById('Xplane-image').style.left='-1500';
+				document.getElementById('Xplane-image').style.opacity='0';
+				document.getElementById('Xplane-image').style.left='-1500';
 				document.getElementById('City-image').style.left='-1460';
 				document.getElementById('City-image').style.opacity='1';
 				document.getElementById('Kerbal-image').style.left='1461'
@@ -260,7 +262,7 @@ body{
 			else if(selected==0){
 				document.getElementById('Minecraft-image').style.opacity='0';
 				document.getElementById('Minecraft-image').style.left='-1500';
-				document.getElementById('Kerbal-image').style.left='-1460';
+				document.getElementById('Kerbal-image').style.left='0';
 				document.getElementById('Kerbal-image').style.opacity='1';
 				document.getElementById('Sandbox-image').style.left='1461'
 			}
@@ -288,7 +290,8 @@ body{
 <IMG id="Sandbox-image" src="DIg-DYjVYAAIWOB.png"></IMG>
 <DIV id="square-1"></DIV>
 <H1 id="edu-text">Educational Games</H1>
-<IMG id="Learn-image" src="Education-Games-101.jpg"></IMG>
-<H3 id="text-1">HIHI</H3>
+<IMG id="Learn-image" src="Education-Games-101.jpg"></IMG></BODY>
+<DIV id="square-2"></DIV>
+
 </BODY>
 </HTML>
